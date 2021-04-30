@@ -66,7 +66,7 @@
     <!-- Footer -->
     <div class="legal">
         <div class="copyright">
-            &copy; 2016 - 2017 <a href="javascript:void(0);">Kelompok 1</a>.
+            &copy; 2016 - 2017 <a href="javascript:void(0);">Yudistira Dewanda</a>.
         </div>
         <div class="version">
             <b>Version: </b> 1 . 0 . 0

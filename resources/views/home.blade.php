@@ -13,10 +13,20 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
+                    
                     You are logged in!
+                    
                 </div>
             </div>
+            <form action="{{ route('master') }}">
+                <div class="form-group row mb-1">
+                    <div class="col-md-8 offset-md-1">
+                        <button type="submit" class="btn btn-primary">
+                            {{__('Home')}}
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </div>
