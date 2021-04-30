@@ -8,5 +8,5 @@ Anggota : Juan Ezra (@jujunanaaa)
 
 Tema Project : Web Peminjaman Buku
 
-Link : https://youtu.be/D6JDm6Vja-U
+Link : 
 

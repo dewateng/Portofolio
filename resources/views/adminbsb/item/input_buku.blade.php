@@ -1,7 +1,6 @@
 @extends('adminbsb.master')
 
 @section('content')
-
 <label for="exampleFormControlInput1" class="form-label"><h2>Input Buku</h2></label>
         <form role="form" method="POST" action="/insertsemua">
             @csrf
@@ -21,10 +20,20 @@
                 <label for="exampleFormControlTextarea1"  class="form-label">sinopsis</label>
                 <textarea class="form-control" name="sinopsis" id="sinopsis" rows="3" placeholder="sinopsis"></textarea>
             </div>
-            
-            <button type="submit" style="margin-top: 25px" class="btn btn-primary">Submit</button>            
-        </form>
-        @include('sweetalert::alert')
+            @push('scripts')
+                <script>
+                    Swal.fire({
+                        title: "Berhasil!",
+                        text: "Memasangkan script sweet alert",
+                        icon: "success",
+                        confirmButtonText: "Cool",
+                    });
+                </script>
+                
 
+@endpush
+<button type="submit" style="margin-top: 25px" class="btn btn-primary">Submit</button>
+            
+        </form>
 @endsection
 

@@ -3,14 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\table;
-use App\Exports\BukuExport;
-use Maatwebsite\Excel\Facades\Excel;
-use App\Http\Controllers\Controller;
-
 use DB;
-use PDF;
 class create_controller extends Controller
 {
     
@@ -25,16 +19,7 @@ class create_controller extends Controller
         return view('adminbsb.item.pengembalian', compact('tabl'));
     }
 
-    public function cetakBuku()
-    {
-        $tabl = DB::table('buku')-> get();
-        return view('adminbsb.item.cetakbuku', compact('tabl'));
-    }
 
-    public function bukuexport()
-    {
-        return Excel::download(new BukuExport, 'buku.xlsx');
-    }
 
     public function update($id_peminjaman, Request $request){
         $query = DB::table('peminjaman')
@@ -77,7 +62,7 @@ class create_controller extends Controller
             "sinopsis" => $request["genre"],
             "genre" => $request["sinopsis"]
         ]);
-        return redirect('/master/inputbuku')->with('success', 'Data Berhasil Tersimpan!');
+        return redirect('/master/inputbuku');
     }
 
     public function peminjaman(Request $request){
@@ -90,7 +75,7 @@ class create_controller extends Controller
             "keterangan" => $request[""],
             "tanggal_pengembalian" => $request[""]
         ]);
-        return redirect('/master/pinjam')->with('success', 'Data Berhasil Tersimpan!');
+        return redirect('/master/pinjam');
     }
 
     public function peminjambuku(Request $request){
@@ -101,7 +86,7 @@ class create_controller extends Controller
             "gender" => $request["gender"],
             "umur" => $request["umur"]
         ]);
-        return redirect('/master/member')->with('success', 'Data Berhasil Tersimpan!');
+        return redirect('/master/member');
     }
 
 

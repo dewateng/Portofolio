@@ -25,10 +25,6 @@ Route::get('/master/table', 'create_controller@table');
 
 Route::get('/master/tablebuku', 'create_controller@tablebuku');
 
-Route::get('/master/tablebuku/export', 'create_controller@bukuexport');
-
-Route::get('/master/tablebuku/cetak', 'create_controller@cetakBuku');
-
 Route::get('/master/tablemember', 'create_controller@tablemember');
 
 Route::get('/master/{id_peminjaman}/pengembalian', 'create_controller@pengembalian');

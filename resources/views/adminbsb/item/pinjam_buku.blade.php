@@ -24,5 +24,5 @@
             <button type="submit" style="margin-top: 25px" class="btn btn-primary">Submit</button>
 
         </form>
-        @include('sweetalert::alert')
+    
 @endsection

@@ -98,8 +98,6 @@
     <script src="{{asset('/adminbsb/js/demo.js')}}"></script>
 
     @stack('scripts')
-
-    
 </body>
 
 </html>

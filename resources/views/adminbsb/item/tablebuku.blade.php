@@ -1,11 +1,8 @@
 @extends('adminbsb.master')
 
 @section('content')
-<a href="/master/tablebuku/export" class="btn btn-success mb-3">Export Excel</a>
-<a href="/master/tablebuku/cetak" target="_blank" class="btn btn-danger mb-3">Export PDF</a>
 
         <div style="background-color:white;border-radius: 8px;">
-            
             <label for="exampleFormControlInput1" style="padding: 20px;" class="form-label"><h3>Table Peminjaman Buku</h3></label>
             <table class="table table-hover"style="padding: 20px;">
                 <thead>
@@ -30,4 +27,5 @@
                 </tbody>
             </table>
         </div>
+    
 @endsection
